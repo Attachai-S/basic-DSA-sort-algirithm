@@ -1,8 +1,4 @@
 import random
-from idlelib.colorizer import prog_group_name_to_tag
-
-from src.bubble_sort import count
-
 
 def createArr(member): #random member to arrays
     for i in range(member):
@@ -13,7 +9,7 @@ arr = []
 createArr(10)
 
 print(f"Original arrays: {arr} \n")
-count = 0
+count = 0 #unnessesarry
 '''selection sort'''
 n = len(arr)
 for i in range(n):
@@ -22,8 +18,8 @@ for i in range(n):
         if arr[j] < arr[min_index]:
             min_index = j
     arr[i], arr[min_index] = arr[min_index], arr[i]
-    count += 1
-    print(f"PRocessing (round {count}): {arr}")
+    count += 1 #unnessesarry
+    print(f"Processing (round {count}): {arr}") #unnessesarry
 '''selection sort'''
 
 print(f"\nSorted array: {arr}")
